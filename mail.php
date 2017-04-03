@@ -24,16 +24,20 @@ if(isset($_POST['submit']))
     $name = $_POST['name'];
     $subject = "From- support@gauamrit.org";
 
-    $message="You are receiving this email because ".$name." filled the contact form on gauamrit.org. Here are the details\n Name - ".$name." \n Email - ".$email." n Message - ".$subject;
+    $message="You are receiving this email because '".$name."' filled the contact form on gauamrit.org. Here are the details\nName - ".$name."\n Email - ".$email."\n Message - ".$subject;
 
     if (mail('ankitjain28may77@gmail.com', $subject, $message, 'From: support@gauamrit.org')) {
         $res = [
             "status" => true,
             "message" => "Email has been sent"
         ];
+        echo json_encode($res);
+    } else {
+        echo json_encode($res);
     }
+
+} else {
     echo json_encode($res);
 }
-echo json_encode($res);
 
 ?>
