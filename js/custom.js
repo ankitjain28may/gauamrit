@@ -155,6 +155,7 @@ jQuery(document).ready(function () {
         mail.name = $("#name").val();
         mail.email = $("#email").val();
         mail.message = $("#message").val();
+        mail.submit = True;
         $.post("/mail.php", mail,function(data, status) {
             if (data.status) {
               console.log(data.status);

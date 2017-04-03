@@ -4,26 +4,25 @@ $res = [
     "message" => "Error in sending the mail"
 ];
 
-if(isset($_POST['mail']))
+if(isset($_POST['submit']))
 {
-    $mail = json_decode($_POST['mail']);
     $error = [];
-    if (!isset($mail['name'])) {
+    if (!isset($_POST['name'])) {
         $error['name'] = "Enter the name";
     }
-    if (!isset($mail['email'])) {
+    if (!isset($_POST['email'])) {
         $error['email'] = "Enter the email";
     }
-    if (!isset($mail['message'])) {
+    if (!isset($_POST['message'])) {
         $error['message'] = "Enter the message";
     }
     if (!count($error)) {
         return json_encode($error);
     }
 
-    $to = $mail['email'];
-    $name = $mail['name'];
-    $subject = $mail['message'];
+    $to = $_POST['email'];
+    $name = $_POST['name'];
+    $subject = $_POST['message'];
 
     $message="Hi Ankit,\n\nThis is a mail from the viewer of your portfolio website with some message.\n\n ".$subject."\n\nsent by ".$name."\n\nEmail address: ".$to;
 
