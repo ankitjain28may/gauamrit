@@ -147,6 +147,8 @@ jQuery(document).ready(function () {
             }
         }
     });
+    /* ------------ Mail ------------- */
+
     $('#contactForm button').click(function (e) {
         e.preventDefault();
         var mail = {};
@@ -155,6 +157,7 @@ jQuery(document).ready(function () {
         mail.message = $("#message").val();
         $.post("/mail.php", mail,function(data, status) {
             if (data.status) {
+              console.log(data.status);
             }else{
             }
         });
