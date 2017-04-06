@@ -25,7 +25,7 @@ if(isset($_POST['submit']))
     $subject = "From- support@gauamrit.org";
     $text = $_POST['message'];
 
-    $message="You are receiving this email because '".$name."' filled the contact form on gauamrit.org. Here are the details\nName - ".$name."\n Email - ".$email."\n Message - ".$text;
+    $message="You are receiving this email because '".$name."' filled the contact form on gauamrit.org. Here are the details\nName - ".$name."\nEmail - ".$to."\nMessage - ".$text;
 
     if (mail('ankitjain28may77@gmail.com', $subject, $message, 'From: support@gauamrit.org')) {
         $res = [
