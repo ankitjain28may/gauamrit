@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <meta name="description" content="Businnes, Portfolio, Corporate"/>
         <meta name="Author" content="WebThemez"/>
-        <title>City Cafe Restaurant Bootstrap 4 Website Template</title>
+        <title>Gauamrit</title>
         <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css"/>
@@ -51,9 +51,6 @@
                             </li>
                             <li>
                                 <a href="#portfolio">GALLERY</a>
-                            </li>
-                            <li>
-                                <a href="#team">CHEFS</a>
                             </li>
                             <li>
                                 <a href="#clients">FEEDBACK</a>
@@ -352,16 +349,16 @@
             <!-- /menus-container  -->
         </section>
         <!-- Works End -->
-        <section id="info" class="info-section">
+        <!-- <section id="info" class="info-section">
             <div class="container text-xs-center">
-                <!-- Portfolio Section End -->
+                Portfolio Section End
                 <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown">
                     <h2>
                         <span class="highlight-text">Stats</span>
                     </h2>
                     <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
                 </div>
-                <!-- Section Header -->
+                Section Header
                 <div class="row wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
                     <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
                         <i class="icon_mic_alt wow pulse" style="visibility: visible; animation-name: pulse;"></i>
@@ -385,7 +382,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section id="contact" class="section-wrapper contact-section" data-stellar-background-ratio="0.5">
             <div class="parallax-overlay"></div>
             <div class="container">
@@ -395,7 +392,7 @@
                         <h2>
                             <span class="highlight-text">Contact Us</span>
                         </h2>
-                        <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">We love feedback. Fill out the form below and we'll get back to you as soon as possible. in minus distinctio dolores ipsam.</p>
+                        <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
                     </div>
                     <!-- Section Header -->
                     <div class="contact-details">
@@ -472,19 +469,19 @@
                         </div>
                         <div class="col-md-4 contac-us">
                             <h4>Contact Us</h4>
-                            <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
+                            <p>Gauamrit Pvt Ltd</p>
                             <ul>
                                 <li>
                                     <i class="fa fa-home"></i>
-                                    123 New Venu Street
+                                    D-338, sector 10, Noida, 201301
                                 </li>
                                 <li>
                                     <i class="fa fa-phone"></i>
-                                    001 123 12345 99
+                                    +91 9958241414
                                 </li>
                                 <li>
                                     <i class="fa fa-envelope-o"></i>
-                                    support@milksite.com
+                                    info@gauamrit.org
                                 </li>
                             </ul>
                         </div>
