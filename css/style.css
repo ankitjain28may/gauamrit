@@ -676,7 +676,7 @@ header.page-header .main-menu.minified{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	/* background: rgba(23, 23, 23, 0.88); */
+	 background: rgba(23, 23, 23, 0.88); 
 }
 
 .main-slides h1.slider-text-big{

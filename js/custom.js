@@ -1,5 +1,33 @@
 jQuery(document).ready(function () {
     "use strict";
+    (function(){
+        var flag = true;
+        function toggleMailBtn(){
+            if(flag){
+                $(".submitMsg").show();
+                $(".showNotif").hide();
+            }else{
+                $(".submitMsg").hide();
+                $(".showNotif").show();
+            }
+            flag = !flag;
+        }
+        $('#contactForm button').click(function (e) {
+            e.preventDefault();
+            var mail = {};
+            mail.name = $("#name").val();
+            mail.email = $("#email").val();
+            mail.message = $("#message").val();
+            $.post("http://gauamrit.org/mail.php", mail,function(data, status) {
+                if (data.status) {
+                    toggleMailBtn();
+                    setTimeout(toggleMailBtn,700);
+                }else{
+                }
+            });
+        })
+        toggleMailBtn();
+    })()
     /* ------- Preloader ------ */
     jQuery(window).load(function () {
         jQuery(".status").fadeOut();
@@ -147,16 +175,4 @@ jQuery(document).ready(function () {
             }
         }
     });
-    $('#contactForm button').click(function (e) {
-        e.preventDefault();
-        var mail = {};
-        mail.name = $("#name").val();
-        mail.email = $("#email").val();
-        mail.message = $("#message").val();
-        $.post("/mail.php", mail,function(data, status) {
-            if (data.status) {
-            }else{
-            }
-        });
-    })
 });
