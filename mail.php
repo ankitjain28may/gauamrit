@@ -4,7 +4,7 @@ $res = [
     "message" => "Error in sending the mail"
 ];
 
-if(isset($_POST['submit']))
+if(isset($_POST['submit']) && $_POST['submit'] != 0)
 {
     $error = [];
     if (!isset($_POST['name'])) {
@@ -29,7 +29,7 @@ if(isset($_POST['submit']))
 
     if (mail('ankitjain28may77@gmail.com', $subject, $message, 'From: info@gauamrit.org')) {
         $res = [
-            "status" => true,
+            "status" => True,
             "message" => "Email has been sent"
         ];
         echo json_encode($res);

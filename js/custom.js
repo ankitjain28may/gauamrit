@@ -19,8 +19,9 @@ jQuery(document).ready(function () {
             mail.name = $("#name").val();
             mail.email = $("#email").val();
             mail.message = $("#message").val();
-            mail.submit = true;
+            mail.submit = 1;
             $.post("http://gauamrit.org/mail.php", mail,function(data, status) {
+                data = JSON.parse(data);
                 if (data.status) {
                    $(".showNotif").text("Message Sent");
                 }else{
