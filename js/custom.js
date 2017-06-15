@@ -6,10 +6,10 @@ jQuery(document).ready(function () {
             if(flag){
                 $(".submitMsg").show();
                 $(".showNotif").hide();
+                $(".showNotif").parent().css({"background-color": "#80cc0c", "border-color": "#80cc0c"});
             }else{
                 $(".submitMsg").hide();
                 $(".showNotif").show();
-                $(".showNotif").text("").parent().css({"background-color": "#80cc0c", "border-color": "#80cc0c"});
             }
             flag = !flag;
         }
