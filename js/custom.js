@@ -9,6 +9,7 @@ jQuery(document).ready(function () {
             }else{
                 $(".submitMsg").hide();
                 $(".showNotif").show();
+                $(".showNotif").text("").parent().css({"background-color": "#80cc0c", "border-color": "#80cc0c"});
             }
             flag = !flag;
         }
@@ -18,12 +19,15 @@ jQuery(document).ready(function () {
             mail.name = $("#name").val();
             mail.email = $("#email").val();
             mail.message = $("#message").val();
+            mail.submit = true;
             $.post("http://gauamrit.org/mail.php", mail,function(data, status) {
                 if (data.status) {
-                    toggleMailBtn();
-                    setTimeout(toggleMailBtn,700);
+                   $(".showNotif").text("Message Sent");
                 }else{
+                   $(".showNotif").text("Message Failed").parent().css({"background-color": "red", "border-color": "red"});
                 }
+                toggleMailBtn();
+                setTimeout(toggleMailBtn,700);
             });
         })
         toggleMailBtn();
