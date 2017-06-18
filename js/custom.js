@@ -1,13 +1,17 @@
 jQuery(document).ready(function () {
     "use strict";
-    (function(){
+    (function () {
         var flag = true;
-        function toggleMailBtn(){
-            if(flag){
+
+        function toggleMailBtn() {
+            if (flag) {
                 $(".submitMsg").show();
                 $(".showNotif").hide();
-                $(".showNotif").parent().css({"background-color": "#80cc0c", "border-color": "#80cc0c"});
-            }else{
+                $(".showNotif").parent().css({
+                    "background-color": "#80cc0c",
+                    "border-color": "#80cc0c"
+                });
+            } else {
                 $(".submitMsg").hide();
                 $(".showNotif").show();
             }
@@ -19,17 +23,32 @@ jQuery(document).ready(function () {
             mail.name = $("#name").val();
             mail.email = $("#email").val();
             mail.message = $("#message").val();
-            mail.submit = 1;
-            $.post("http://gauamrit.org/mail.php", mail,function(data, status) {
-                data = JSON.parse(data);
-                if (data.status) {
-                   $(".showNotif").text("Message Sent");
-                }else{
-                   $(".showNotif").text("Message Failed").parent().css({"background-color": "red", "border-color": "red"});
-                }
+            console.log(mail);
+            console.log($("#contactForm")[0].checkValidity());
+            if ($("#contactForm")[0].checkValidity()) {
+                mail.submit = 1;
+                $.post("http://gauamrit.org/mail.php", mail, function (data, status) {
+                    data = JSON.parse(data);
+                    if (data.status) {
+                        $(".showNotif").text("Message Sent");
+                    } else {
+                        $(".showNotif").text("Message Failed").parent().css({
+                            "background-color": "red",
+                            "border-color": "red"
+                        });
+                    }
+                    toggleMailBtn();
+                    setTimeout(toggleMailBtn, 700);
+                });
+            } else {
+                $('#submit_handle').click();
+                $(".showNotif").text("Please Correct the Errors").parent().css({
+                    "background-color": "red",
+                    "border-color": "red"
+                });
                 toggleMailBtn();
-                setTimeout(toggleMailBtn,700);
-            });
+                setTimeout(toggleMailBtn, 700);
+            }
         })
         toggleMailBtn();
     })()

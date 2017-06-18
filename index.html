@@ -483,21 +483,22 @@
                         <!-- Section Header End -->
                         <div class="contact-form wow bounceInRight">
                             <!-- Contact Form -->
-                            <form name="sentMessage" id="contactForm"  novalidate>
+                            <form name="sentMessage" id="contactForm">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control"  placeholder="Full Name" id="name" required data-validation-required-message="Please enter your name"/>
+                                    <input type="text" class="form-control"  placeholder="Full Name" id="name" required/>
                                     <p class="help-block"></p>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="Email"  id="email" required data-validation-required-message="Please enter your email"/>
+                                    <input type="email" class="form-control" placeholder="Email"  id="email" required/>
                                 </div>
                                 <div class="col-md-12">
-                                    <textarea rows="6" cols="100" class="form-control"  placeholder="Message" id="message" required data-validation-required-message="Please enter your message" minlength="5"  data-validation-minlength-message="Min 5 characters"  maxlength="999" style="resize:none"></textarea>
+                                    <textarea rows="6" cols="100" class="form-control"  placeholder="Message" id="message" required minlength="5" maxlength="999" style="resize:none"></textarea>
                                 </div>
                                 <div class="col-md-8 col-md-offset-2">
                                     <br/>
                                     <div id="success"></div>
-                                    <button type="submit" class="btn btn-primary"><span class="submitMsg">Submit Message</span><span class="showNotif">Message Sent</span></button>
+                                    <input id="submit_handle" type="submit" style="display: none">
+                                    <button type="button" class="btn btn-primary"><span class="submitMsg">Submit Message</span><span class="showNotif">Message Sent</span></button>
                                 </div>
                             </form>
                         </div>
@@ -617,8 +618,6 @@
             <script src="js/jquery.magnific-popup.min.js"></script>
             <script src="js/jquery.sliderPro.min.js"></script>
             <script src="js/owl.carousel.min.js"></script>
-            <script src="js/jqBootstrapValidation.js"></script>
-            <script src="js/contact_me.js"></script>
             <script src="js/custom.js"></script>
         </body>
     </html>
