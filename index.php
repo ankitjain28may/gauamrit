@@ -71,9 +71,9 @@
                     <div class="img-overlay"></div>
                     <img class="sp-image" src="images/slider/slider-1.jpg" alt="Slider 1"/>
                     <h1 class="sp-layer slider-text-big" data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                        <span class="highlight-texts">Only The Best Quality Products</span>
+                        <span class="highlight-texts"></span>
                     </h1>
-                    <p class="sp-layer" data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">because we know what is healthy for you.</p>
+                    <p class="sp-layer" data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right"></p>
                 </div>
                 <!-- Slides -->
                 <!-- Slides End -->
@@ -81,9 +81,9 @@
                     <div class="img-overlay"></div>
                     <img class="sp-image" src="images/slider/slider-2.jpg" alt="Slider 2"/>
                     <h1 class="sp-layer slider-text-big" data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                        <span class="highlight-texts">Dairy Products</span>
+                        <span class="highlight-texts"></span>
                     </h1>
-                    <p class="sp-layer" data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">for all your needs</p>
+                    <p class="sp-layer" data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right"></p>
                 </div>
                 <!-- Slides -->
                 <!-- Slides End -->
@@ -91,9 +91,9 @@
                     <div class="img-overlay"></div>
                     <img class="sp-image" src="images/slider/slider-3.jpg" alt="Slider 3"/>
                     <h1 class="sp-layer slider-text-big" data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                        <span class="highlight-texts">Try once and you will forget other brands</span>
+                        <span class="highlight-texts"></span>
                     </h1>
-                    <p class="sp-layer" data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">as our aim is to provide you healthy products.</p>
+                    <p class="sp-layer" data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right"></p>
                 </div>
                 <!-- Slides -->
             </div>
@@ -204,14 +204,14 @@
                         <img src="images/milk.jpg" alt="Custom Image"/>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 customized-text wow fadeInDown black-ed">
-                        <p>Our aim is to provide you quality daily products which are vital for your health but are light on your pocket.Thus you can see why we focus on</p>
-                        <div class="row">
+                        <p>Our aim is to provide you quality daily products which are vital for your health but are light on your pocket.Thus you can see what we focus on</p>
+                        <!-- <div class="row">
                             <div class="col-md-11">
                                 <strong>Quality</strong>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iusto, natus est ducimus saepe laborum</p>
                             </div>
-                        </div>
-                        <div class="row">
+                        </div> -->
+                        <!-- <div class="row">
                             <div class="col-md-11">
                                 <strong>Tasteness</strong>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iusto, natus est ducimus saepe laborum Lorem ipsum dolor sit amet.</p>
@@ -222,7 +222,7 @@
                                 <strong>Inexpensivity</strong>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iusto, natus est ducimus saepe laborum Lorem ipsum dolor sit amet.</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -524,10 +524,10 @@
                                             <p>Gauamrit is the ultimate destination for premium quality milk products.I suggest everyone to use their products everyday.</p>
                                         </blockquote>
                                         <div class="carousel-info">
-                                            <img alt="" src="http://keenthemes.com/assets/bootsnipp/img1-small.jpg" class="pull-left"/>
+                                            <img alt="" src="" class="pull-left"/>
                                             <div class="pull-left">
-                                                <span class="testimonials-name">Lina Mars</span>
-                                                <span class="testimonials-post">Commercial Director</span>
+                                                <span class="testimonials-name">Ankit Jain</span>
+                                                <span class="testimonials-post">Regular Customer</span>
                                             </div>
                                         </div>
                                     </div>
@@ -591,8 +591,8 @@
                             <br/>
                             <br/>
                             <p>
-                                Copyright © 2018. Template by:
-                                <a href="http://milkthemez.com/free-bootstrap-templates/">WebThemez</a>
+                                Copyright © 2017
+                                <a href="">Gauamrit</a>
                                 , All rights reserved
                             </p>
                         </div>

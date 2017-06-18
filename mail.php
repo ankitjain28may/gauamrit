@@ -7,13 +7,13 @@ $res = [
 if(isset($_POST['submit']) && $_POST['submit'] != 0)
 {
     $error = [];
-    if (!isset($_POST['name'])) {
+    if (empty($_POST['name'])) {
         $error['name'] = "Enter the name";
     }
-    if (!isset($_POST['email'])) {
+    if (empty($_POST['email'])) {
         $error['email'] = "Enter the email";
     }
-    if (!isset($_POST['message'])) {
+    if (empty($_POST['message'])) {
         $error['message'] = "Enter the message";
     }
     if (count($error)) {
